@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
 
 body {
-    background-color: rgb(240, 239, 239);
+    background: rgb(247,202,222);
+background: radial-gradient(circle, rgba(247,202,222,1) 0%, rgba(245,232,184,1) 100%);
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid pink;
 }
 
 img {
@@ -34,6 +35,8 @@ h3 {
 #header-text {
     flex-basis: 80%;
     display: flex;
+    color: pink;
+
 }
 
 nav {
