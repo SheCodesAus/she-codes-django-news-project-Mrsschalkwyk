@@ -36,3 +36,9 @@ class AddStoryView(generic.CreateView):
     template_name = 'news/createStory.html'
     success_url = reverse_lazy('news:index')
     #what if I want to insert a pop up here after submint
+#modle content block style css
+
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
