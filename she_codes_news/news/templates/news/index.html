@@ -8,8 +8,14 @@
 {% endblock %}
 
 {% block content %}
+<div class="container">
+<buton class="btn">
 <a href="{% url 'news:newStory' %}">Write New Story</a>
-    <h2>Latest News</h2>
+</button>
+</div>
+
+
+<h2>Latest News</h2>
 
     <div id="latest-stories">
         {% if latest_stories %}
