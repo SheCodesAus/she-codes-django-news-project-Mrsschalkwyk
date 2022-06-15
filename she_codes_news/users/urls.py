@@ -9,7 +9,7 @@ urlpatterns = [
 name='createAccount'),
 ]
 
-urlpatterns = [
-    # Add this
-    path('profile/', profile, name='users-profile'),
-]
+# urlpatterns = [
+
+#     path('profile/', profile, name='users-page'),
+# ]

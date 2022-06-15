@@ -16,6 +16,6 @@ class CreateAccountView(CreateView):
     success_url = reverse_lazy('login')
     template_name = 'users/createAccount.html'
 
-@login_required
-def Profile(request):
-    return render(request, 'users/profile.html')
+# @login_required
+# def Profile(request):
+#     return render(request, 'users/userpage.html')

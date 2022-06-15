@@ -1,9 +1,7 @@
 from django.db import models
-from .models import Profile
 
 from django.contrib.auth.models import AbstractUser
-from django.contrib.auth.models import User
-from .models import Profile
+from django.contrib.auth.models import Users
 
 
 # Create your models here.
@@ -13,13 +11,11 @@ class CustomUser(AbstractUser):
         return self.username
 
 
-# Extending User Model Using a One-To-One Link
-class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    image = models.ImageField(default='default.jpg', upload_to='profile_pics')
+# # Extending User Model Using a One-To-One Link
+# class UserPage(Users):
+#     user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
+#     avatar = models.ImageField(default='default.jpg', upload_to='profile_images')
+#     bio = models.TextField()
 
-    avatar = models.ImageField(default='default.jpg', upload_to='profile_images')
-    bio = models.TextField()
-
-    def __str__(self):
-        return self.user.username
+#     def __str__(self):
+#         return self.user.username
