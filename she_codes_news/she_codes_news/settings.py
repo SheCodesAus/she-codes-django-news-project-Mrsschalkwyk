@@ -26,7 +26,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 SECRET_KEY = os.environ.get(
     'DJANGO_SECRET_KEY',
-    ''5*15pt5log&-bjpkqo0117!b!x4do-mgmxvg8n$3016384zz(7'
+    '5*15pt5log&-bjpkqo0117!b!x4do-mgmxvg8n$3016384zz(7'
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -41,7 +41,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'news.apps.NewsConfig',
-    'corsheaders',
+    # 'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -57,9 +57,9 @@ LOGIN_REDIRECT_URL = 'news:index'
 LOGOUT_REDIRECT_URL = 'news:index'
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
+    # 'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    # 'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

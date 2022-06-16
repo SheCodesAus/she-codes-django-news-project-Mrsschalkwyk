@@ -1,4 +1,4 @@
-from .models import CustomUser
+# from .models import CustomUser
 from django.apps import AppConfig
 
 

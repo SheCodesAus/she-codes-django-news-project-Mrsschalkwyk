@@ -1,6 +1,6 @@
 from django.urls import path
 from .views import CreateAccountView
-from .views import profile
+# from .views import profile
 
 app_name = 'users'
 
