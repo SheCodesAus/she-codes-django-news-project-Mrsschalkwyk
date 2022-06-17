@@ -24,7 +24,7 @@ class IndexView(generic.ListView):
         context['all_stories'] = createstory
         return context
 
-        
+        # have a look here this is the view for the profile page
 class StoryView(generic.DetailView):
     model = NewsStory
     template_name = 'news/story.html'
@@ -36,6 +36,7 @@ class AddStoryView(generic.CreateView):
     template_name = 'news/createStory.html'
     success_url = reverse_lazy('news:index')
    
+
 
 
     def form_valid(self, form):
