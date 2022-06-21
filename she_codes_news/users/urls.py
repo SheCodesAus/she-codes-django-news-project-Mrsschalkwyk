@@ -6,7 +6,7 @@ app_name = 'users'
 
 urlpatterns = [
     path('create-account/', CreateAccountView.as_view(), name='createAccount'),
-    path('Profile/', UserProfile.as_view(), name='profile'),
+    path('profile/<int:pk>/', UserProfile.as_view(), name='profile'),
 
 ]
 

@@ -18,4 +18,8 @@ class CreateAccountView(CreateView):
 
 
 class UserProfile(generic.ListView):
-    template_name = 'news/index.html'
+    template_name = 'users/profile.html'
+    model = CustomUser
+    context_object_name = 'profile'
+
+    
